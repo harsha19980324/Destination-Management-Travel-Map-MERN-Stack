@@ -1,0 +1,106 @@
+{
+    "sourceFile": "frontend/src/components/print.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 22,
+            "patches": [
+                {
+                    "date": 1633753537605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1633753546350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,11 @@\n-rcc\n\\ No newline at end of file\n+import React, { Component } from 'react'\r\n+\r\n+export default class print extends Component {\r\n+    render() {\r\n+        return (\r\n+            <div>\r\n+                \r\n+            </div>\r\n+        )\r\n+    }\r\n+}\r\n"
+                },
+                {
+                    "date": 1633753599549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import React, { Component } from 'react'\r\n+import Printer, { print } from 'react-pdf-print'\r\n \r\n export default class print extends Component {\r\n     render() {\r\n         return (\r\n"
+                },
+                {
+                    "date": 1633753610879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n import React, { Component } from 'react'\r\n import Printer, { print } from 'react-pdf-print'\r\n \r\n+const ids = ['1']\r\n+\r\n export default class print extends Component {\r\n     render() {\r\n         return (\r\n             <div>\r\n"
+                },
+                {
+                    "date": 1633753627149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,16 @@\n \r\n export default class print extends Component {\r\n     render() {\r\n         return (\r\n-            <div>\r\n-                \r\n+            <div className='App'>\r\n+        <Printer>\r\n+            <div id={ids[0]} style={{ width:'210mm', height: '297mm' }}>\r\n+                Hello World!\r\n             </div>\r\n+        </Printer>\r\n+        <input type='button' style={{ position: 'relative', float: 'right' }}\r\n+          onClick={() => print(ids)} value='Stampa' />\r\n+      </div>\r\n         )\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1633753649285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,4 +17,6 @@\n       </div>\r\n         )\r\n     }\r\n }\r\n+\r\n+export default\r\n"
+                },
+                {
+                    "date": 1633753661338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n         )\r\n     }\r\n }\r\n \r\n-export default\r\n+\r\n"
+                },
+                {
+                    "date": 1633753698094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Printer, { print } from 'react-pdf-print'\r\n \r\n const ids = ['1']\r\n \r\n-export default class print extends Component {\r\n+ class print extends Component {\r\n     render() {\r\n         return (\r\n             <div className='App'>\r\n         <Printer>\r\n"
+                },
+                {
+                    "date": 1633753707116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Printer, { print } from 'react-pdf-print'\r\n \r\n const ids = ['1']\r\n \r\n- class print extends Component {\r\n+export default class print extends Component {\r\n     render() {\r\n         return (\r\n             <div className='App'>\r\n         <Printer>\r\n"
+                },
+                {
+                    "date": 1633753795231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Printer, { print } from 'react-pdf-print'\r\n \r\n const ids = ['1']\r\n \r\n-export default class print extends Component {\r\n+export default class Printer extends Component {\r\n     render() {\r\n         return (\r\n             <div className='App'>\r\n         <Printer>\r\n"
+                },
+                {
+                    "date": 1633753836068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,20 +2,25 @@\n import Printer, { print } from 'react-pdf-print'\r\n \r\n const ids = ['1']\r\n \r\n-export default class Printer extends Component {\r\n+export default class print extends Component {\r\n     render() {\r\n         return (\r\n-            <div className='App'>\r\n-        <Printer>\r\n-            <div id={ids[0]} style={{ width:'210mm', height: '297mm' }}>\r\n-                Hello World!\r\n-            </div>\r\n-        </Printer>\r\n-        <input type='button' style={{ position: 'relative', float: 'right' }}\r\n-          onClick={() => print(ids)} value='Stampa' />\r\n-      </div>\r\n+            <table>\r\n+        <thead>\r\n+          <th>column 1</th>\r\n+          <th>column 2</th>\r\n+          <th>column 3</th>\r\n+        </thead>\r\n+        <tbody>\r\n+          <tr>\r\n+            <td>data 1</td>\r\n+            <td>data 2</td>\r\n+            <td>data 3</td>\r\n+          </tr>\r\n+        </tbody>\r\n+      </table>\r\n         )\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1633753843710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             <td>data 3</td>\r\n           </tr>\r\n         </tbody>\r\n       </table>\r\n-        )\r\n+        );\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1633753850815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React, { Component } from 'react'\r\n import Printer, { print } from 'react-pdf-print'\r\n \r\n-const ids = ['1']\r\n+const ids = ['1'];\r\n \r\n export default class print extends Component {\r\n     render() {\r\n         return (\r\n"
+                },
+                {
+                    "date": 1633754202554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React, { Component } from 'react'\r\n import Printer, { print } from 'react-pdf-print'\r\n \r\n-const ids = ['1'];\r\n \r\n+\r\n export default class print extends Component {\r\n     render() {\r\n         return (\r\n             <table>\r\n@@ -23,5 +23,23 @@\n         );\r\n     }\r\n }\r\n \r\n+class Example extends React.PureComponent {\r\n+    render() {\r\n+      return (\r\n+        <div>\r\n+          <ReactToPrint\r\n+            trigger={() => {\r\n+              // NOTE: could just as easily return <SomeComponent />. Do NOT pass an `onClick` prop\r\n+              // to the root node of the returned component as it will be overwritten.\r\n+              return <a href=\"#\">Print this out!</a>;\r\n+            }}\r\n+            content={() => this.componentRef}\r\n+          />\r\n+          <ComponentToPrint ref={el => (this.componentRef = el)} />\r\n+        </div>\r\n+      );\r\n+    }\r\n+  }\r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1633754392436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React, { Component } from 'react'\r\n-import Printer, { print } from 'react-pdf-print'\r\n+import Print, { print } from 'react-pdf-print'\r\n \r\n \r\n \r\n export default class print extends Component {\r\n"
+                },
+                {
+                    "date": 1633754405035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Print, { print } from 'react-pdf-print'\r\n \r\n \r\n \r\n-export default class print extends Component {\r\n+export default class printr extends Component {\r\n     render() {\r\n         return (\r\n             <table>\r\n         <thead>\r\n"
+                },
+                {
+                    "date": 1633754761365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import React, { Component } from 'react'\r\n-import Print, { print } from 'react-pdf-print'\r\n+import Printer, { print } from 'react-pdf-print'\r\n \r\n \r\n \r\n-export default class printr extends Component {\r\n+export default class print extends Component {\r\n     render() {\r\n         return (\r\n             <table>\r\n         <thead>\r\n"
+                },
+                {
+                    "date": 1633754790888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,23 +23,6 @@\n         );\r\n     }\r\n }\r\n \r\n-class Example extends React.PureComponent {\r\n-    render() {\r\n-      return (\r\n-        <div>\r\n-          <ReactToPrint\r\n-            trigger={() => {\r\n-              // NOTE: could just as easily return <SomeComponent />. Do NOT pass an `onClick` prop\r\n-              // to the root node of the returned component as it will be overwritten.\r\n-              return <a href=\"#\">Print this out!</a>;\r\n-            }}\r\n-            content={() => this.componentRef}\r\n-          />\r\n-          <ComponentToPrint ref={el => (this.componentRef = el)} />\r\n-        </div>\r\n-      );\r\n-    }\r\n-  }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1633755199483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,27 +2,27 @@\n import Printer, { print } from 'react-pdf-print'\r\n \r\n \r\n \r\n-export default class print extends Component {\r\n+export class ComponentToPrint extends React.PureComponent {\r\n     render() {\r\n-        return (\r\n-            <table>\r\n-        <thead>\r\n-          <th>column 1</th>\r\n-          <th>column 2</th>\r\n-          <th>column 3</th>\r\n-        </thead>\r\n-        <tbody>\r\n-          <tr>\r\n-            <td>data 1</td>\r\n-            <td>data 2</td>\r\n-            <td>data 3</td>\r\n-          </tr>\r\n-        </tbody>\r\n-      </table>\r\n-        );\r\n+      return (\r\n+        <table>\r\n+          <thead>\r\n+            <th>column 1</th>\r\n+            <th>column 2</th>\r\n+            <th>column 3</th>\r\n+          </thead>\r\n+          <tbody>\r\n+            <tr>\r\n+              <td>data 1</td>\r\n+              <td>data 2</td>\r\n+              <td>data 3</td>\r\n+            </tr>\r\n+          </tbody>\r\n+        </table>\r\n+      );\r\n     }\r\n-}\r\n+  }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1633755223554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n-import React, { Component } from 'react'\r\n-import Printer, { print } from 'react-pdf-print'\r\n+import React from 'react';\r\n+import ReactToPrint from 'react-to-print';\r\n \r\n+import { ComponentToPrint } from './ComponentToPrint';\r\n \r\n \r\n+\r\n export class ComponentToPrint extends React.PureComponent {\r\n     render() {\r\n       return (\r\n         <table>\r\n"
+                },
+                {
+                    "date": 1633755232901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,30 +1,28 @@\n-import React from 'react';\r\n-import ReactToPrint from 'react-to-print';\r\n+import React, { Component } from 'react'\r\n+import Printer, { print } from 'react-pdf-print'\r\n \r\n-import { ComponentToPrint } from './ComponentToPrint';\r\n \r\n \r\n-\r\n-export class ComponentToPrint extends React.PureComponent {\r\n+export default class print extends Component {\r\n     render() {\r\n-      return (\r\n-        <table>\r\n-          <thead>\r\n-            <th>column 1</th>\r\n-            <th>column 2</th>\r\n-            <th>column 3</th>\r\n-          </thead>\r\n-          <tbody>\r\n-            <tr>\r\n-              <td>data 1</td>\r\n-              <td>data 2</td>\r\n-              <td>data 3</td>\r\n-            </tr>\r\n-          </tbody>\r\n-        </table>\r\n-      );\r\n+        return (\r\n+            <table>\r\n+        <thead>\r\n+          <th>column 1</th>\r\n+          <th>column 2</th>\r\n+          <th>column 3</th>\r\n+        </thead>\r\n+        <tbody>\r\n+          <tr>\r\n+            <td>data 1</td>\r\n+            <td>data 2</td>\r\n+            <td>data 3</td>\r\n+          </tr>\r\n+        </tbody>\r\n+      </table>\r\n+        );\r\n     }\r\n-  }\r\n+}\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1633755311881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,27 +2,24 @@\n import Printer, { print } from 'react-pdf-print'\r\n \r\n \r\n \r\n-export default class print extends Component {\r\n+class Example extends React.PureComponent {\r\n     render() {\r\n-        return (\r\n-            <table>\r\n-        <thead>\r\n-          <th>column 1</th>\r\n-          <th>column 2</th>\r\n-          <th>column 3</th>\r\n-        </thead>\r\n-        <tbody>\r\n-          <tr>\r\n-            <td>data 1</td>\r\n-            <td>data 2</td>\r\n-            <td>data 3</td>\r\n-          </tr>\r\n-        </tbody>\r\n-      </table>\r\n-        );\r\n+      return (\r\n+        <div>\r\n+          <ReactToPrint\r\n+            trigger={() => {\r\n+              // NOTE: could just as easily return <SomeComponent />. Do NOT pass an `onClick` prop\r\n+              // to the root node of the returned component as it will be overwritten.\r\n+              return <a href=\"#\">Print this out!</a>;\r\n+            }}\r\n+            content={() => this.componentRef}\r\n+          />\r\n+          <ComponentToPrint ref={el => (this.componentRef = el)} />\r\n+        </div>\r\n+      );\r\n     }\r\n-}\r\n+  }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1633755359503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,28 @@\n import React, { Component } from 'react'\r\n import Printer, { print } from 'react-pdf-print'\r\n \r\n+export class ComponentToPrint extends React.PureComponent {\r\n+    render() {\r\n+      return (\r\n+        <table>\r\n+          <thead>\r\n+            <th>column 1</th>\r\n+            <th>column 2</th>\r\n+            <th>column 3</th>\r\n+          </thead>\r\n+          <tbody>\r\n+            <tr>\r\n+              <td>data 1</td>\r\n+              <td>data 2</td>\r\n+              <td>data 3</td>\r\n+            </tr>\r\n+          </tbody>\r\n+        </table>\r\n+      );\r\n+    }\r\n+  }\r\n \r\n-\r\n class Example extends React.PureComponent {\r\n     render() {\r\n       return (\r\n         <div>\r\n"
+                }
+            ],
+            "date": 1633753537605,
+            "name": "Commit-0",
+            "content": "rcc"
+        }
+    ]
+}

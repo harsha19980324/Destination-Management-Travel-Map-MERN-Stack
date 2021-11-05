@@ -1,0 +1,166 @@
+{
+    "sourceFile": "frontend/src/components/Map_cus.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 37,
+            "patches": [
+                {
+                    "date": 1633291904660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1633291925846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   const [title, setTitle] = useState(null);\r\n   const [desc, setDesc] = useState(null);\r\n   const [star, setStar] = useState(0);\r\n   const [viewport, setViewport] = useState({\r\n-    latitude: 470.040182,\r\n+    latitude: 47.040182,\r\n     longitude: 17.071727,\r\n     zoom: 4,\r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n"
+                },
+                {
+                    "date": 1633292012032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,11 @@\n   const [title, setTitle] = useState(null);\r\n   const [desc, setDesc] = useState(null);\r\n   const [star, setStar] = useState(0);\r\n   const [viewport, setViewport] = useState({\r\n-    latitude: 47.040182,\r\n+    latitude: 7.8731,\r\n     longitude: 17.071727,\r\n-    zoom: 4,\r\n+    zoom: 40,\r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n   const [showLogin, setShowLogin] = useState(false);\r\n \r\n"
+                },
+                {
+                    "date": 1633292022428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   const [desc, setDesc] = useState(null);\r\n   const [star, setStar] = useState(0);\r\n   const [viewport, setViewport] = useState({\r\n     latitude: 7.8731,\r\n-    longitude: 17.071727,\r\n+    longitude: 80.7718,\r\n     zoom: 40,\r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n   const [showLogin, setShowLogin] = useState(false);\r\n"
+                },
+                {
+                    "date": 1633292037424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   const [star, setStar] = useState(0);\r\n   const [viewport, setViewport] = useState({\r\n     latitude: 7.8731,\r\n     longitude: 80.7718,\r\n-    zoom: 40,\r\n+    zoom: 10,\r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n   const [showLogin, setShowLogin] = useState(false);\r\n \r\n"
+                },
+                {
+                    "date": 1633292047310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   const [star, setStar] = useState(0);\r\n   const [viewport, setViewport] = useState({\r\n     latitude: 7.8731,\r\n     longitude: 80.7718,\r\n-    zoom: 10,\r\n+    zoom: ,\r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n   const [showLogin, setShowLogin] = useState(false);\r\n \r\n"
+                },
+                {
+                    "date": 1633292057688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   const [star, setStar] = useState(0);\r\n   const [viewport, setViewport] = useState({\r\n     latitude: 7.8731,\r\n     longitude: 80.7718,\r\n-    zoom: ,\r\n+    zoom: 7,\r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n   const [showLogin, setShowLogin] = useState(false);\r\n \r\n"
+                },
+                {
+                    "date": 1633292067466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   const [star, setStar] = useState(0);\r\n   const [viewport, setViewport] = useState({\r\n     latitude: 7.8731,\r\n     longitude: 80.7718,\r\n-    zoom: 7,\r\n+    zoom: 6.,\r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n   const [showLogin, setShowLogin] = useState(false);\r\n \r\n"
+                },
+                {
+                    "date": 1633292341040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   const [star, setStar] = useState(0);\r\n   const [viewport, setViewport] = useState({\r\n     latitude: 7.8731,\r\n     longitude: 80.7718,\r\n-    zoom: 6.,\r\n+    zoom: 6.5,\r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n   const [showLogin, setShowLogin] = useState(false);\r\n \r\n@@ -75,8 +75,10 @@\n     myStorage.removeItem(\"user\");\r\n   };\r\n \r\n   return (\r\n+\r\n+    <div\r\n     <div style={{ height: \"100vh\", width: \"100%\" }}>\r\n       <ReactMapGL\r\n         {...viewport}\r\n         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}\r\n"
+                },
+                {
+                    "date": 1633292348615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n   };\r\n \r\n   return (\r\n \r\n-    <div\r\n+    <div className=\"conta\"\r\n     <div style={{ height: \"100vh\", width: \"100%\" }}>\r\n       <ReactMapGL\r\n         {...viewport}\r\n         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}\r\n"
+                },
+                {
+                    "date": 1633292378777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n   };\r\n \r\n   return (\r\n \r\n-    <div className=\"conta\"\r\n+    <div className=\"container\"\r\n     <div style={{ height: \"100vh\", width: \"100%\" }}>\r\n       <ReactMapGL\r\n         {...viewport}\r\n         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}\r\n"
+                },
+                {
+                    "date": 1633292384348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n   };\r\n \r\n   return (\r\n \r\n-    <div className=\"container\"\r\n+    <div className=\"container\">\r\n     <div style={{ height: \"100vh\", width: \"100%\" }}>\r\n       <ReactMapGL\r\n         {...viewport}\r\n         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}\r\n"
+                },
+                {
+                    "date": 1633292393315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -199,8 +199,9 @@\n           />\r\n         )}\r\n       </ReactMapGL>\r\n     </div>\r\n+    </div>\r\n   );\r\n }\r\n \r\n export default Map_cus\r\n"
+                },
+                {
+                    "date": 1633292437779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n   };\r\n \r\n   return (\r\n \r\n-    <div className=\"container\">\r\n+    <div className=\"container_map\">\r\n     <div style={{ height: \"100vh\", width: \"100%\" }}>\r\n       <ReactMapGL\r\n         {...viewport}\r\n         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}\r\n"
+                },
+                {
+                    "date": 1633292962325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n   const [viewport, setViewport] = useState({\r\n     latitude: 7.8731,\r\n     longitude: 80.7718,\r\n     zoom: 6.5,\r\n+    6.93273324044905, 79.84285533862581\r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n   const [showLogin, setShowLogin] = useState(false);\r\n \r\n"
+                },
+                {
+                    "date": 1633292969937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   const [title, setTitle] = useState(null);\r\n   const [desc, setDesc] = useState(null);\r\n   const [star, setStar] = useState(0);\r\n   const [viewport, setViewport] = useState({\r\n-    latitude: 7.8731,\r\n+    latitude: 6.93273324044905,\r\n     longitude: 80.7718,\r\n     zoom: 6.5,\r\n     6.93273324044905, 79.84285533862581\r\n   });\r\n"
+                },
+                {
+                    "date": 1633292976555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   const [desc, setDesc] = useState(null);\r\n   const [star, setStar] = useState(0);\r\n   const [viewport, setViewport] = useState({\r\n     latitude: 6.93273324044905,\r\n-    longitude: 80.7718,\r\n+    longitude: 79.84285533862581,\r\n     zoom: 6.5,\r\n     6.93273324044905, 79.84285533862581\r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n"
+                },
+                {
+                    "date": 1633293027395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,9 @@\n   const [star, setStar] = useState(0);\r\n   const [viewport, setViewport] = useState({\r\n     latitude: 6.93273324044905,\r\n     longitude: 79.84285533862581,\r\n-    zoom: 6.5,\r\n-    6.93273324044905, 79.84285533862581\r\n+    zoom: ,    \r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n   const [showLogin, setShowLogin] = useState(false);\r\n \r\n"
+                },
+                {
+                    "date": 1633293075782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,12 @@\n   const [title, setTitle] = useState(null);\r\n   const [desc, setDesc] = useState(null);\r\n   const [star, setStar] = useState(0);\r\n   const [viewport, setViewport] = useState({\r\n-    latitude: 6.93273324044905,\r\n-    longitude: 79.84285533862581,\r\n-    zoom: ,    \r\n+    latitude: 7.8731,\r\n+    longitude: 80.7718,\r\n+    zoom: 6.5,\r\n+    \r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n   const [showLogin, setShowLogin] = useState(false);\r\n \r\n"
+                },
+                {
+                    "date": 1633509122454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n   const [viewport, setViewport] = useState({\r\n     latitude: 7.8731,\r\n     longitude: 80.7718,\r\n     zoom: 6.5,\r\n-    \r\n   });\r\n   const [showRegister, setShowRegister] = useState(false);\r\n   const [showLogin, setShowLogin] = useState(false);\r\n \r\n@@ -120,9 +119,9 @@\n               >\r\n                 <div className=\"card\">\r\n                   <label>Place</label>\r\n                   <h4 className=\"place\">{p.title}</h4>\r\n-                  <label>Review</label>\r\n+                  <label>Description</label>\r\n                   <p className=\"desc\">{p.desc}</p>\r\n                   <label>Rating</label>\r\n                   <div className=\"stars\">\r\n                     {Array(p.rating).fill(<Star className=\"star\" />)}\r\n"
+                },
+                {
+                    "date": 1633725020963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,9 +127,9 @@\n                     {Array(p.rating).fill(<Star className=\"star\" />)}\r\n                   </div>\r\n                   <label>Information</label>\r\n                   <span className=\"username\">\r\n-                    Created by <b>{p.username}</b>\r\n+                    Created by <b><{p.username}</b>\r\n                   </span>\r\n                   <span className=\"date\">{format(p.createdAt)}</span>\r\n                 </div>\r\n               </Popup>\r\n"
+                },
+                {
+                    "date": 1633725032151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,9 +127,9 @@\n                     {Array(p.rating).fill(<Star className=\"star\" />)}\r\n                   </div>\r\n                   <label>Information</label>\r\n                   <span className=\"username\">\r\n-                    Created by <b><{p.username}</b>\r\n+                    Created by <b h>{p.username}</b>\r\n                   </span>\r\n                   <span className=\"date\">{format(p.createdAt)}</span>\r\n                 </div>\r\n               </Popup>\r\n"
+                },
+                {
+                    "date": 1633725037319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,9 +127,9 @@\n                     {Array(p.rating).fill(<Star className=\"star\" />)}\r\n                   </div>\r\n                   <label>Information</label>\r\n                   <span className=\"username\">\r\n-                    Created by <b h>{p.username}</b>\r\n+                    Created by <b hidden>{p.username}</b>\r\n                   </span>\r\n                   <span className=\"date\">{format(p.createdAt)}</span>\r\n                 </div>\r\n               </Popup>\r\n"
+                },
+                {
+                    "date": 1633725056985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,9 +127,9 @@\n                     {Array(p.rating).fill(<Star className=\"star\" />)}\r\n                   </div>\r\n                   <label>Information</label>\r\n                   <span className=\"username\">\r\n-                    Created by <b hidden>{p.username}</b>\r\n+                    Created by <b >{p.username}</b>\r\n                   </span>\r\n                   <span className=\"date\">{format(p.createdAt)}</span>\r\n                 </div>\r\n               </Popup>\r\n"
+                },
+                {
+                    "date": 1633725064205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,10 +126,10 @@\n                   <div className=\"stars\">\r\n                     {Array(p.rating).fill(<Star className=\"star\" />)}\r\n                   </div>\r\n                   <label>Information</label>\r\n-                  <span className=\"username\">\r\n-                    Created by <b >{p.username}</b>\r\n+                  <span hidden className=\"username\">\r\n+                    Created by <b>{p.username}</b>\r\n                   </span>\r\n                   <span className=\"date\">{format(p.createdAt)}</span>\r\n                 </div>\r\n               </Popup>\r\n"
+                },
+                {
+                    "date": 1633725169601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,8 +130,9 @@\n                   <span hidden className=\"username\">\r\n                     Created by <b>{p.username}</b>\r\n                   </span>\r\n                   <span className=\"date\">{format(p.createdAt)}</span>\r\n+                  \r\n                 </div>\r\n               </Popup>\r\n             )}\r\n           </>\r\n"
+                },
+                {
+                    "date": 1633725178077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,9 +116,9 @@\n                 closeOnClick={false}\r\n                 onClose={() => setCurrentPlaceId(null)}\r\n                 anchor=\"left\"\r\n               >\r\n-                <div className=\"card\">\r\n+                <div className=\"card\" >\r\n                   <label>Place</label>\r\n                   <h4 className=\"place\">{p.title}</h4>\r\n                   <label>Description</label>\r\n                   <p className=\"desc\">{p.desc}</p>\r\n@@ -130,9 +130,8 @@\n                   <span hidden className=\"username\">\r\n                     Created by <b>{p.username}</b>\r\n                   </span>\r\n                   <span className=\"date\">{format(p.createdAt)}</span>\r\n-                  \r\n                 </div>\r\n               </Popup>\r\n             )}\r\n           </>\r\n"
+                },
+                {
+                    "date": 1633725184068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,9 +116,9 @@\n                 closeOnClick={false}\r\n                 onClose={() => setCurrentPlaceId(null)}\r\n                 anchor=\"left\"\r\n               >\r\n-                <div className=\"card\" >\r\n+                <div className=\"card\" width>\r\n                   <label>Place</label>\r\n                   <h4 className=\"place\">{p.title}</h4>\r\n                   <label>Description</label>\r\n                   <p className=\"desc\">{p.desc}</p>\r\n"
+                },
+                {
+                    "date": 1633725189516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,9 +116,9 @@\n                 closeOnClick={false}\r\n                 onClose={() => setCurrentPlaceId(null)}\r\n                 anchor=\"left\"\r\n               >\r\n-                <div className=\"card\" width>\r\n+                <div className=\"card\" width=\"50px\">\r\n                   <label>Place</label>\r\n                   <h4 className=\"place\">{p.title}</h4>\r\n                   <label>Description</label>\r\n                   <p className=\"desc\">{p.desc}</p>\r\n"
+                },
+                {
+                    "date": 1633725210672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,9 +116,9 @@\n                 closeOnClick={false}\r\n                 onClose={() => setCurrentPlaceId(null)}\r\n                 anchor=\"left\"\r\n               >\r\n-                <div className=\"card\" width=\"50px\">\r\n+                <div className=\"card\">\r\n                   <label>Place</label>\r\n                   <h4 className=\"place\">{p.title}</h4>\r\n                   <label>Description</label>\r\n                   <p className=\"desc\">{p.desc}</p>\r\n"
+                },
+                {
+                    "date": 1633725243562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,9 +116,9 @@\n                 closeOnClick={false}\r\n                 onClose={() => setCurrentPlaceId(null)}\r\n                 anchor=\"left\"\r\n               >\r\n-                <div className=\"card\">\r\n+                <div className=\"card\" width=\"500\">\r\n                   <label>Place</label>\r\n                   <h4 className=\"place\">{p.title}</h4>\r\n                   <label>Description</label>\r\n                   <p className=\"desc\">{p.desc}</p>\r\n"
+                },
+                {
+                    "date": 1633725266188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,9 +116,9 @@\n                 closeOnClick={false}\r\n                 onClose={() => setCurrentPlaceId(null)}\r\n                 anchor=\"left\"\r\n               >\r\n-                <div className=\"card\" width=\"500\">\r\n+                <div className=\"card\">\r\n                   <label>Place</label>\r\n                   <h4 className=\"place\">{p.title}</h4>\r\n                   <label>Description</label>\r\n                   <p className=\"desc\">{p.desc}</p>\r\n"
+                },
+                {
+                    "date": 1633782564547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n                 anchor=\"left\"\r\n               >\r\n                 <div className=\"card\">\r\n                   <label>Place</label>\r\n-                  <h4 className=\"place\">{p.title}</h4>\r\n+                  <h4 className=\"place\"><b>{p.title}</h4>\r\n                   <label>Description</label>\r\n                   <p className=\"desc\">{p.desc}</p>\r\n                   <label>Rating</label>\r\n                   <div className=\"stars\">\r\n"
+                },
+                {
+                    "date": 1633782572476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n                 anchor=\"left\"\r\n               >\r\n                 <div className=\"card\">\r\n                   <label>Place</label>\r\n-                  <h4 className=\"place\"><b>{p.title}</h4>\r\n+                  <h4 className=\"place\"><b>{p.title}</b></h4>\r\n                   <label>Description</label>\r\n                   <p className=\"desc\">{p.desc}</p>\r\n                   <label>Rating</label>\r\n                   <div className=\"stars\">\r\n"
+                },
+                {
+                    "date": 1633782588369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n                 <div className=\"card\">\r\n                   <label>Place</label>\r\n                   <h4 className=\"place\"><b>{p.title}</b></h4>\r\n                   <label>Description</label>\r\n-                  <p className=\"desc\">{p.desc}</p>\r\n+                  <p className=\"desc\"><b>{p.desc}</p>\r\n                   <label>Rating</label>\r\n                   <div className=\"stars\">\r\n                     {Array(p.rating).fill(<Star className=\"star\" />)}\r\n                   </div>\r\n"
+                },
+                {
+                    "date": 1633782605662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n                 <div className=\"card\">\r\n                   <label>Place</label>\r\n                   <h4 className=\"place\"><b>{p.title}</b></h4>\r\n                   <label>Description</label>\r\n-                  <p className=\"desc\"><b>{p.desc}</p>\r\n+                  <h4><p className=\"desc\"><b>{p.desc}</b></p>\r\n                   <label>Rating</label>\r\n                   <div className=\"stars\">\r\n                     {Array(p.rating).fill(<Star className=\"star\" />)}\r\n                   </div>\r\n"
+                },
+                {
+                    "date": 1633782678253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,14 +120,14 @@\n                 <div className=\"card\">\r\n                   <label>Place</label>\r\n                   <h4 className=\"place\"><b>{p.title}</b></h4>\r\n                   <label>Description</label>\r\n-                  <h4><p className=\"desc\"><b>{p.desc}</b></p>\r\n+                  <h4><p className=\"desc\"><b>{p.desc}</b></p></h4>\r\n                   <label>Rating</label>\r\n                   <div className=\"stars\">\r\n                     {Array(p.rating).fill(<Star className=\"star\" />)}\r\n                   </div>\r\n-                  <label>Information</label>\r\n+                  <label >Information</label>\r\n                   <span hidden className=\"username\">\r\n                     Created by <b>{p.username}</b>\r\n                   </span>\r\n                   <span className=\"date\">{format(p.createdAt)}</span>\r\n"
+                },
+                {
+                    "date": 1633782693280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,11 +125,11 @@\n                   <label>Rating</label>\r\n                   <div className=\"stars\">\r\n                     {Array(p.rating).fill(<Star className=\"star\" />)}\r\n                   </div>\r\n-                  <label >Information</label>\r\n+                  <label hidden>Information</label>\r\n                   <span hidden className=\"username\">\r\n-                    Created by <b>{p.username}</b>\r\n+                    Created by <b hidden>{p.username}</b>\r\n                   </span>\r\n                   <span className=\"date\">{format(p.createdAt)}</span>\r\n                 </div>\r\n               </Popup>\r\n"
+                }
+            ],
+            "date": 1633291904660,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\n\r\nimport ReactMapGL, { Marker, Popup } from \"react-map-gl\";\r\nimport { useEffect, useState } from \"react\";\r\nimport { Room, Star, StarBorder } from \"@material-ui/icons\";\r\nimport axios from \"axios\";\r\nimport { format } from \"timeago.js\";\r\nimport Register from \"./Register\";\r\nimport Login from \"./Login\";\r\n\r\nfunction Map_cus() {\r\n    const myStorage = window.localStorage;\r\n  const [currentUsername, setCurrentUsername] = useState(myStorage.getItem(\"user\"));\r\n  const [pins, setPins] = useState([]);\r\n  const [currentPlaceId, setCurrentPlaceId] = useState(null);\r\n  const [newPlace, setNewPlace] = useState(null);\r\n  const [title, setTitle] = useState(null);\r\n  const [desc, setDesc] = useState(null);\r\n  const [star, setStar] = useState(0);\r\n  const [viewport, setViewport] = useState({\r\n    latitude: 470.040182,\r\n    longitude: 17.071727,\r\n    zoom: 4,\r\n  });\r\n  const [showRegister, setShowRegister] = useState(false);\r\n  const [showLogin, setShowLogin] = useState(false);\r\n\r\n  const handleMarkerClick = (id, lat, long) => {\r\n    setCurrentPlaceId(id);\r\n    setViewport({ ...viewport, latitude: lat, longitude: long });\r\n  };\r\n\r\n  const handleAddClick = (e) => {\r\n    const [longitude, latitude] = e.lngLat;\r\n    setNewPlace({\r\n      lat: latitude,\r\n      long: longitude,\r\n    });\r\n  };\r\n\r\n  const handleSubmit = async (e) => {\r\n    e.preventDefault();\r\n    const newPin = {\r\n      username: currentUsername,\r\n      title,\r\n      desc,\r\n      rating: star,\r\n      lat: newPlace.lat,\r\n      long: newPlace.long,\r\n    };\r\n\r\n    try {\r\n      const res = await axios.post(\"/pins\", newPin);\r\n      setPins([...pins, res.data]);\r\n      setNewPlace(null);\r\n    } catch (err) {\r\n      console.log(err);\r\n    }\r\n  };\r\n\r\n  useEffect(() => {\r\n    const getPins = async () => {\r\n      try {\r\n        const allPins = await axios.get(\"/pins\");\r\n        setPins(allPins.data);\r\n      } catch (err) {\r\n        console.log(err);\r\n      }\r\n    };\r\n    getPins();\r\n  }, []);\r\n\r\n  const handleLogout = () => {\r\n    setCurrentUsername(null);\r\n    myStorage.removeItem(\"user\");\r\n  };\r\n\r\n  return (\r\n    <div style={{ height: \"100vh\", width: \"100%\" }}>\r\n      <ReactMapGL\r\n        {...viewport}\r\n        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}\r\n        width=\"100%\"\r\n        height=\"100%\"\r\n        transitionDuration=\"200\"\r\n        mapStyle=\"mapbox://styles/safak/cknndpyfq268f17p53nmpwira\"\r\n        onViewportChange={(viewport) => setViewport(viewport)}\r\n        \r\n      >\r\n        {pins.map((p) => (\r\n          <>\r\n            <Marker\r\n              latitude={p.lat}\r\n              longitude={p.long}\r\n              offsetLeft={-3.5 * viewport.zoom}\r\n              offsetTop={-7 * viewport.zoom}\r\n            >\r\n              <Room\r\n                style={{\r\n                  fontSize: 7 * viewport.zoom,\r\n                  color:\r\n                    currentUsername === p.username ? \"tomato\" : \"slateblue\",\r\n                  cursor: \"pointer\",\r\n                }}\r\n                onClick={() => handleMarkerClick(p._id, p.lat, p.long)}\r\n              />\r\n            </Marker>\r\n            {p._id === currentPlaceId && (\r\n              <Popup\r\n                key={p._id}\r\n                latitude={p.lat}\r\n                longitude={p.long}\r\n                closeButton={true}\r\n                closeOnClick={false}\r\n                onClose={() => setCurrentPlaceId(null)}\r\n                anchor=\"left\"\r\n              >\r\n                <div className=\"card\">\r\n                  <label>Place</label>\r\n                  <h4 className=\"place\">{p.title}</h4>\r\n                  <label>Review</label>\r\n                  <p className=\"desc\">{p.desc}</p>\r\n                  <label>Rating</label>\r\n                  <div className=\"stars\">\r\n                    {Array(p.rating).fill(<Star className=\"star\" />)}\r\n                  </div>\r\n                  <label>Information</label>\r\n                  <span className=\"username\">\r\n                    Created by <b>{p.username}</b>\r\n                  </span>\r\n                  <span className=\"date\">{format(p.createdAt)}</span>\r\n                </div>\r\n              </Popup>\r\n            )}\r\n          </>\r\n        ))}\r\n        {newPlace && (\r\n          <>\r\n            <Marker\r\n              latitude={newPlace.lat}\r\n              longitude={newPlace.long}\r\n              offsetLeft={-3.5 * viewport.zoom}\r\n              offsetTop={-7 * viewport.zoom}\r\n            >\r\n              <Room\r\n                style={{\r\n                  fontSize: 7 * viewport.zoom,\r\n                  color: \"tomato\",\r\n                  cursor: \"pointer\",\r\n                }}\r\n              />\r\n            </Marker>\r\n            <Popup\r\n              latitude={newPlace.lat}\r\n              longitude={newPlace.long}\r\n              closeButton={true}\r\n              closeOnClick={false}\r\n              onClose={() => setNewPlace(null)}\r\n              anchor=\"left\"\r\n            >\r\n              <div>\r\n                <form onSubmit={handleSubmit}>\r\n                  <label>Title</label>\r\n                  <input\r\n                    placeholder=\"Enter a title\"\r\n                    autoFocus\r\n                    onChange={(e) => setTitle(e.target.value)}\r\n                  />\r\n                  <label>Description</label>\r\n                  <textarea\r\n                    placeholder=\"Say us something about this place.\"\r\n                    onChange={(e) => setDesc(e.target.value)}\r\n                  />\r\n                  <label>Rating</label>\r\n                  <select onChange={(e) => setStar(e.target.value)}>\r\n                    <option value=\"1\">1</option>\r\n                    <option value=\"2\">2</option>\r\n                    <option value=\"3\">3</option>\r\n                    <option value=\"4\">4</option>\r\n                    <option value=\"5\">5</option>\r\n                  </select>\r\n                  <button type=\"submit\" className=\"submitButton\">\r\n                    Add Pin\r\n                  </button>\r\n                </form>\r\n              </div>\r\n            </Popup>\r\n          </>\r\n        )}\r\n        \r\n        {showRegister && <Register setShowRegister={setShowRegister} />}\r\n        {showLogin && (\r\n          <Login\r\n            setShowLogin={setShowLogin}\r\n            setCurrentUsername={setCurrentUsername}\r\n            myStorage={myStorage}\r\n          />\r\n        )}\r\n      </ReactMapGL>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default Map_cus\r\n"
+        }
+    ]
+}

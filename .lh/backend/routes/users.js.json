@@ -1,0 +1,18 @@
+{
+    "sourceFile": "backend/routes/users.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1633268702138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1633268702138,
+            "name": "Commit-0",
+            "content": "const User = require(\"../model/User\");\nconst router = require(\"express\").Router();\nconst bcrypt = require(\"bcrypt\");\n\n//REGISTER\nrouter.post(\"/register\", async (req, res) => {\n  try {\n    //generate new password\n    const salt = await bcrypt.genSalt(10);\n    const hashedPassword = await bcrypt.hash(req.body.password, salt);\n\n    //create new user\n    const newUser = new User({\n      username: req.body.username,\n      email: req.body.email,\n      password: hashedPassword,\n    });\n\n    //save user and respond\n    const user = await newUser.save();\n    res.status(200).json(user._id);\n  } catch (err) {\n    console.log(err);\n    res.status(500).json(err);\n  }\n});\n\n//LOGIN\nrouter.post(\"/login\", async (req, res) => {\n  try {\n    //find user\n    const user = await User.findOne({ username: req.body.username });\n    !user && res.status(400).json(\"Wrong username or password\");\n\n    //validate password\n    const validPassword = await bcrypt.compare(\n      req.body.password,\n      user.password\n    );\n    !validPassword && res.status(400).json(\"Wrong username or password\");\n\n    //send response\n    res.status(200).json({ _id: user._id, username: user.username });\n  } catch (err) {\n    res.status(500).json(err);\n  }\n});\n\nmodule.exports = router;\n"
+        }
+    ]
+}

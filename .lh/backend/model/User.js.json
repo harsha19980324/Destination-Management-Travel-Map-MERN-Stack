@@ -1,0 +1,26 @@
+{
+    "sourceFile": "backend/model/User.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1633802090402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1633802428971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,5 +23,5 @@\n   },\n   { timestamps: true }\n );\n \n-module.exports = mongoose.model(\"Map_User\", UserSchema);\n\\ No newline at end of file\n+module.exports = mongoose.model(\"User\", UserSchema);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1633802434127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,5 +23,5 @@\n   },\n   { timestamps: true }\n );\n \n-module.exports = mongoose.model(\"User\", UserSchema);\n\\ No newline at end of file\n+module.exports = mongoose.model(\"Map_User\", UserSchema);\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1633802090402,
+            "name": "Commit-0",
+            "content": "const mongoose = require(\"mongoose\");\n\nconst UserSchema = new mongoose.Schema(\n  {\n    username: {\n      type: String,\n      require: true,\n      min: 3,\n      max: 20,\n      unique: true,\n    },\n    email: {\n      type: String,\n      required: true,\n      max: 50,\n      unique: true,\n    },\n    password: {\n      type: String,\n      required: true,\n      min: 6,\n    },\n  },\n  { timestamps: true }\n);\n\nmodule.exports = mongoose.model(\"Map_User\", UserSchema);"
+        }
+    ]
+}
